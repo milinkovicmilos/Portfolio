@@ -1,0 +1,71 @@
+$main-color: #252525;
+$default-text-color: #fff;
+@mixin flex($jc) {
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}
+@mixin link-style($size) {
+    text-decoration: none;
+    color: $default-text-color;
+    font-size: $size;
+}
+@mixin center($width) {
+    width: $width;
+    margin: 0px auto;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: $main-color;
+    color: $default-text-color;
+}
+header {
+    height: 100px;
+    @include center(80%);
+    @include flex(space-between)
+}
+a:hover {
+    color: #d1d1d1;
+}
+h1 {
+    a {
+        @include link-style(1rem);
+    }
+}
+h3 {
+    font-size: 2rem;
+}
+nav {
+    height: 100%;
+    width: 50%;
+    ul {
+        height: 100%;
+        list-style-type: none;
+        @include flex(space-between)
+    }
+    a {
+        @include link-style(1.2rem);
+    }
+}
+#cover {
+    height: 600px;
+    @include center(90%);
+    padding-top: 100px;
+    h2 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 3rem;
+    }
+}
+#about {
+    @include center(90%);
+
+}

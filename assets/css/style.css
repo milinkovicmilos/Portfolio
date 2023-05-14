@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: #252525;
+  color: #fff;
+}
+
+header {
+  height: 100px;
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a:hover {
+  color: #d1d1d1;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+nav {
+  height: 100%;
+  width: 50%;
+}
+nav ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#cover {
+  height: 600px;
+  width: 90%;
+  margin: 0px auto;
+  padding-top: 100px;
+}
+#cover h2 {
+  font-size: 1.8rem;
+}
+#cover p {
+  font-size: 3rem;
+}
+
+#about {
+  width: 90%;
+  margin: 0px auto;
+}/*# sourceMappingURL=style.css.map */
