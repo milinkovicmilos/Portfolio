@@ -1,1 +1,27 @@
-/*# sourceMappingURL=responsive.css.map */
+@media screen and (max-width: 1024px) {
+  #cover {
+    padding-top: 100px;
+    height: 400px;
+  }
+  #skills #skills-holder h4 {
+    font-size: 1.8rem;
+  }
+  #skills #skills-holder .tech ul li {
+    width: 200px;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #skills #skills-holder .tech {
+    width: 100%;
+  }
+  #skills #skills-holder .tech h4 {
+    font-size: 1.4rem;
+  }
+  #skills #skills-holder .tech ul li {
+    font-size: 1.3rem;
+  }
+  #skills #skills-holder .tech .img-holder {
+    width: 38px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

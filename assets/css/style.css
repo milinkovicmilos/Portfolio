@@ -20,6 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 a:hover {
@@ -46,6 +47,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 nav a {
   text-decoration: none;
@@ -54,10 +56,10 @@ nav a {
 }
 
 #cover {
-  height: 600px;
+  height: 500px;
   width: 90%;
   margin: 0px auto;
-  padding-top: 100px;
+  padding-top: 200px;
 }
 #cover h2 {
   font-size: 1.8rem;
@@ -70,6 +72,9 @@ nav a {
 #about {
   width: 90%;
   margin: 0px auto;
+}
+#about h3 {
+  margin-bottom: 20px;
 }
 #about p {
   font-size: 1.2rem;
@@ -88,26 +93,32 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-#skills #skills-holder h4 {
+#skills #skills-holder .tech {
+  width: 50%;
+}
+#skills #skills-holder .tech h4 {
   margin-bottom: 30px;
+  text-align: center;
 }
-#skills #skills-holder ul {
+#skills #skills-holder .tech ul {
   list-style-type: none;
 }
-#skills #skills-holder ul li {
-  width: 60%;
+#skills #skills-holder .tech ul li {
+  width: 250px;
   margin: 0px auto;
   height: 45px;
-  margin: 10px auto;
+  margin-bottom: 20px;
   font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
-#skills #skills-holder .img-holder {
+#skills #skills-holder .tech .img-holder {
   width: 40px;
 }
-#skills #skills-holder .img-holder img {
+#skills #skills-holder .tech .img-holder img {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
