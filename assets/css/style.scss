@@ -39,7 +39,7 @@ h1 {
         @include link-style(1rem);
     }
 }
-h3 {
+h3, h4 {
     font-size: 2rem;
 }
 nav {
@@ -63,9 +63,43 @@ nav {
     }
     p {
         font-size: 3rem;
+        margin-bottom: 20px;
     }
 }
 #about {
     @include center(90%);
+    p {
+        font-size: 1.2rem;
+    }
+}
+#skills {
+    @include center(90%);
+    h3 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    #skills-holder {
+        @include flex(space-around);
+        h4 {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: none;
+            li {
+                @include center(60%);
+                height: 45px;
+                margin: 10px auto;
+                font-size: 2rem;
+                @include flex(space-between);
+            }
+        }
+        .img-holder {
+            width: 40px;
+            img {
+                width: 100%;
+            }
+        }
 
+    }
 }

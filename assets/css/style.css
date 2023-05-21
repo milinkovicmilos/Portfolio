@@ -32,7 +32,7 @@ h1 a {
   font-size: 1rem;
 }
 
-h3 {
+h3, h4 {
   font-size: 2rem;
 }
 
@@ -64,9 +64,50 @@ nav a {
 }
 #cover p {
   font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 #about {
   width: 90%;
   margin: 0px auto;
+}
+#about p {
+  font-size: 1.2rem;
+}
+
+#skills {
+  width: 90%;
+  margin: 0px auto;
+}
+#skills h3 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+#skills #skills-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#skills #skills-holder h4 {
+  margin-bottom: 30px;
+}
+#skills #skills-holder ul {
+  list-style-type: none;
+}
+#skills #skills-holder ul li {
+  width: 60%;
+  margin: 0px auto;
+  height: 45px;
+  margin: 10px auto;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#skills #skills-holder .img-holder {
+  width: 40px;
+}
+#skills #skills-holder .img-holder img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
