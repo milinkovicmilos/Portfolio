@@ -21,8 +21,15 @@
     width: 200px;
     font-size: 1.6rem;
   }
-  #projects #project-container .project-holder {
-    width: 45%;
+  #projects #project-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+  }
+  #projects #project-container .project-holder h4 {
+    font-size: 1.6rem;
+  }
+  #projects #project-container .project-holder p {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -44,11 +51,16 @@
   #skills #skills-holder .tech h4 {
     font-size: 1.8rem;
   }
-  #skills #skills-holder .tech ul li {
-    font-size: 1.6rem;
-  }
   #skills #skills-holder .tech .img-holder {
     width: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #projects #project-container .project-holder h4 {
+    font-size: 1.4rem;
+  }
+  #projects #project-container .project-holder p {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -61,10 +73,13 @@
   #about p {
     font-size: 1.2rem;
   }
-  #projects #project-container .project-holder {
-    width: 100%;
+  #projects #project-container {
+    grid-template-columns: 1fr;
+  }
+  #projects #project-container .project-holder h4 {
+    font-size: 1.6rem;
   }
   #projects #project-container .project-holder p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=responsive.css.map */
