@@ -166,4 +166,19 @@ header nav a {
 }
 #projects #project-container .project-holder .img-holder img {
   width: 100%;
+}
+#projects #project-container .project-holder #bg {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  aspect-ratio: 2/1;
+  margin-bottom: 20px;
+  background-color: #2e2e2e;
+}
+#projects #project-container .project-holder #bg p {
+  padding: 0px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

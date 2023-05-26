@@ -153,6 +153,17 @@ header {
                     width: 100%;
                 }
             }
+            #bg {
+                @include center(90%);
+                @include flex(space-evenly);
+                aspect-ratio: 2/1;
+                margin-bottom: 20px;
+                background-color: #2e2e2e;
+                p {
+                    padding: 0px;
+                    text-align: center;
+                }
+            }
         }
     }
 }
