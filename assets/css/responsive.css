@@ -1,4 +1,15 @@
+@media screen and (max-width: 1336px) {
+  #projects #project-container .project-holder h4 {
+    font-size: 1.4rem;
+  }
+  #projects #project-container .project-holder p {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 1024px) {
+  header nav {
+    width: 60%;
+  }
   #cover {
     padding-top: 100px;
     height: 400px;
@@ -10,18 +21,50 @@
     width: 200px;
     font-size: 1.6rem;
   }
+  #projects #project-container .project-holder {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    width: 90%;
+  }
+  header nav a {
+    font-size: 1.2rem;
+  }
+  #about p {
+    text-align: justify;
+  }
   #skills #skills-holder .tech {
     width: 100%;
   }
   #skills #skills-holder .tech h4 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   #skills #skills-holder .tech ul li {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   #skills #skills-holder .tech .img-holder {
-    width: 38px;
+    width: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header nav a {
+    font-size: 1rem;
+  }
+  #cover p {
+    font-size: 2.6rem;
+  }
+  #about p {
+    font-size: 1.2rem;
+  }
+  #projects #project-container .project-holder {
+    width: 100%;
+  }
+  #projects #project-container .project-holder p {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=responsive.css.map */
