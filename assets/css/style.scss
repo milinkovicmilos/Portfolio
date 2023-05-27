@@ -220,3 +220,20 @@ header {
         }
     }
 }
+main {
+    border-bottom: 2px solid $details-color;
+    padding-bottom: 40px;
+}
+footer {
+    @include center(90%);
+    @include flex(space-between);
+    margin: 40px auto;
+    i {
+        color: #fff;
+        font-size: 1.8rem;
+    }
+    #socials, #sass {
+        width: 10%;
+        @include flex(space-between);
+    }
+}

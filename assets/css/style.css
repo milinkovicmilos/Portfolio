@@ -234,4 +234,30 @@ header nav a {
 }
 #contact #form-container input:focus, #contact #form-container textarea:focus {
   outline: 0px;
+}
+
+main {
+  border-bottom: 2px solid #585858;
+  padding-bottom: 40px;
+}
+
+footer {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 40px auto;
+}
+footer i {
+  color: #fff;
+  font-size: 1.8rem;
+}
+footer #socials, footer #sass {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }/*# sourceMappingURL=style.css.map */
