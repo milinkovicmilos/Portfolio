@@ -247,7 +247,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 40px auto;
 }
 footer i {
@@ -255,9 +255,9 @@ footer i {
   font-size: 1.8rem;
 }
 footer #socials, footer #sass {
-  width: 10%;
+  width: 15%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
 }/*# sourceMappingURL=style.css.map */

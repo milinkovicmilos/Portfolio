@@ -226,14 +226,14 @@ main {
 }
 footer {
     @include center(90%);
-    @include flex(space-between);
+    @include flex(space-between, wrap);
     margin: 40px auto;
     i {
         color: #fff;
         font-size: 1.8rem;
     }
     #socials, #sass {
-        width: 10%;
-        @include flex(space-between);
+        width: 15%;
+        @include flex(space-evenly);
     }
 }

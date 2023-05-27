@@ -37,6 +37,14 @@
             }
         }
     }
+    #contact #form-container {
+        column-gap: 5vw;
+    }
+    footer{
+        #socials, #sass {
+            font-size: 1.5rem;
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     header {
@@ -62,6 +70,20 @@
             }
         }
     }
+    #contact #form-container {
+        width: 90%;
+    }
+    footer {
+        p {
+            order: 3;
+            text-align: center;
+            flex-grow: 1;
+        }
+        #socials, #sass {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+    }
 }
 @media screen and (max-width: 600px) {
     #projects #project-container .project-holder {
@@ -71,7 +93,12 @@
         p {
             font-size: 1rem;
         }
-    } 
+    }
+    #contact #form-container {
+        input, textarea {
+            font-size: 1.1rem;
+        }
+    }
 }
 @media screen and (max-width: 480px) {
     header nav a {
@@ -93,5 +120,21 @@
                 font-size: 1.1rem;
             }
         } 
+    }
+    #contact #form-container {
+        width: 100%;
+        box-sizing: border-box;
+        input, textarea {
+            font-size: 1rem;
+        }
+        #form-name, #form-lastname {
+            grid-column: 1 / 3;
+        }
+    }
+    footer {
+        flex-direction: column;
+        #socials, #sass {
+            width: 50%;
+        }
     }
 }

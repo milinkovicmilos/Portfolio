@@ -31,6 +31,12 @@
   #projects #project-container .project-holder p {
     font-size: 1.2rem;
   }
+  #contact #form-container {
+    column-gap: 5vw;
+  }
+  footer #socials, footer #sass {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
@@ -54,6 +60,18 @@
   #skills #skills-holder .tech .img-holder {
     width: 40px;
   }
+  #contact #form-container {
+    width: 90%;
+  }
+  footer p {
+    order: 3;
+    text-align: center;
+    flex-grow: 1;
+  }
+  footer #socials, footer #sass {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   #projects #project-container .project-holder h4 {
@@ -61,6 +79,9 @@
   }
   #projects #project-container .project-holder p {
     font-size: 1rem;
+  }
+  #contact #form-container input, #contact #form-container textarea {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -81,5 +102,21 @@
   }
   #projects #project-container .project-holder p {
     font-size: 1.1rem;
+  }
+  #contact #form-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #contact #form-container input, #contact #form-container textarea {
+    font-size: 1rem;
+  }
+  #contact #form-container #form-name, #contact #form-container #form-lastname {
+    grid-column: 1/3;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer #socials, footer #sass {
+    width: 50%;
   }
 }/*# sourceMappingURL=responsive.css.map */
