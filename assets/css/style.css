@@ -42,11 +42,8 @@
   }
 }
 @keyframes blink {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
+  50% {
+    color: transparent;
   }
 }
 * {

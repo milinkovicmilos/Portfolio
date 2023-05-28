@@ -29,7 +29,7 @@
   0% {
     visibility: visible;
   }
-  100% {
+  50% {
     visibility: hidden;
   }
 }/*# sourceMappingURL=misc.css.map */
