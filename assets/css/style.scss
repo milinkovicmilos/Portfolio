@@ -1,32 +1,4 @@
-$main-color: #252525;
-$details-color: lighten($main-color, 20%);
-$default-text-color: #fff;
-@mixin flex($jc, $w : nowrap) {
-    display: flex;
-    align-items: center;
-    justify-content: $jc;
-    flex-wrap: $w;
-}
-@mixin grid($n-columns) {
-    display: grid;
-    grid-template-columns: repeat($n-columns, 1fr);
-}
-@mixin link-style($size) {
-    text-decoration: none;
-    color: $default-text-color;
-    font-size: $size;
-}
-@mixin center($width) {
-    width: $width;
-    margin: 0px auto;
-}
-@mixin border-style($b-radius, $b-width, $b-color) {
-    border-radius: $b-radius;
-    border: $b-width solid $b-color;
-}
-%move-down {
-    margin-top: 60px;
-}
+@import 'misc.scss';
 * {
     margin: 0px;
     padding: 0px;
@@ -39,12 +11,36 @@ body {
     background-color: $main-color;
     color: $default-text-color;
 }
-a:hover {
+a, i, h1 {
+    transition: color 0.2s;
+}
+a:hover, i:hover, #h-holder:hover h1 {
     color: $details-color;
 }
-h1 {
-    a {
-        @include link-style(1rem);
+#h-holder {
+    width: 254px;
+    height: 26px;
+    h1 {
+        font-size: 1.5rem;
+        color: $default-text-color;
+        position: relative;
+        span {
+            position: absolute;
+            transform: translate(24px, 0px);
+        }
+        #h-tag {
+            right: 254px;
+            width: auto;
+            text-align: right;
+            background-color: $main-color;
+            animation: h-tag-reset 2s linear;
+            z-index: 2;
+        }
+        #h-text {
+            width: 230px;
+            animation: h-anim 1s linear;
+            z-index: 1;
+        }
     }
 }
 h3, h4 {
@@ -70,6 +66,11 @@ header {
             @include link-style(1.4rem);
         }
     }
+}
+main {
+    border-top: 2px solid $details-color;
+    border-bottom: 2px solid $details-color;
+    padding-bottom: 40px;
 }
 #cover {
     height: 500px;
@@ -181,7 +182,7 @@ header {
         @include center(50%);
         @include grid(2);
         column-gap: 10vh;
-        row-gap: 10px;
+        row-gap: 20px;
         @include border-style(15px, 2px, $details-color);
         padding: 20px;
         .form-element { 
@@ -198,8 +199,16 @@ header {
                 padding: 5px 10px;
                 width: 100%;
                 box-sizing: border-box;
-                background-color: $details-color;
-                color: #fff;
+                background-color: $main-color;
+                border: 0px;
+                border-bottom: 2px solid $details-color;
+                color: $second-color;
+            }
+            textarea {
+                border: 2px solid $details-color;
+            }
+            input:focus, textarea:focus{
+                border-color: $second-color;
             }
             textarea{
                 resize: none;
@@ -210,30 +219,30 @@ header {
         }
         input[type="submit"] {
             background-color: $details-color;
-            color: #fff;
+            color: $default-text-color;
+            border: 0px;
             font-size: 1.2rem;
             width: 100%;
             padding: 10px;
+        }
+        input[type="submit"]:focus {
+            color: $second-color;
         }
         input:focus, textarea:focus {
             outline: 0px;
         }
     }
 }
-main {
-    border-bottom: 2px solid $details-color;
-    padding-bottom: 40px;
-}
 footer {
     @include center(90%);
     @include flex(space-between, wrap);
     margin: 40px auto;
     i {
-        color: #fff;
+        color: $default-text-color;
         font-size: 1.8rem;
     }
     #socials, #sass {
         width: 15%;
-        @include flex(space-evenly);
+        @include flex(space-between);
     }
 }

@@ -8,7 +8,10 @@
 }
 @media screen and (max-width: 1024px) {
   header nav {
-    width: 60%;
+    width: 50%;
+  }
+  header nav a {
+    font-size: 1.2rem;
   }
   #cover {
     padding-top: 100px;
@@ -34,13 +37,17 @@
   #contact #form-container {
     column-gap: 5vw;
   }
-  footer #socials, footer #sass {
+  footer i {
     font-size: 1.5rem;
+  }
+  footer #socials, footer #sass {
+    width: 15%;
   }
 }
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
+    padding-top: 20px;
   }
   header nav {
     width: 90%;
@@ -70,7 +77,8 @@
   }
   footer #socials, footer #sass {
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
   }
 }
 @media screen and (max-width: 600px) {

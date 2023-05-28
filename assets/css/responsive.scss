@@ -10,7 +10,10 @@
 }
 @media screen and (max-width: 1024px) {
     header nav {
-        width: 60%;
+        width: 50%;
+        a {
+            font-size: 1.2rem;
+        }
     }
     #cover {
         padding-top: 100px;
@@ -41,14 +44,18 @@
         column-gap: 5vw;
     }
     footer{
-        #socials, #sass {
+        i {
             font-size: 1.5rem;
+        }
+        #socials, #sass {
+            width: 15%;
         }
     }
 }
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
+        padding-top: 20px;
         nav {
             width: 90%;
             a {
@@ -81,7 +88,8 @@
         }
         #socials, #sass {
             width: 50%;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            justify-content: space-evenly;
         }
     }
 }

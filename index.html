@@ -16,7 +16,15 @@
 </head>
 <body>
     <header>
-        <h1><a href="#">Miloš Milinković</a></h1>
+        <div id="logo">
+            <a href="#">
+                <div id="h-holder">
+                    <h1>
+                        <span id="h-tag">&#60;&nbsp;</span><span id="h-text">Miloš Milinković &#47;&#62;</span>
+                    </h1>
+                </div>
+            </a>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -190,19 +198,19 @@
                 <div id="form-container">
                     <div id="form-name" class="form-element">
                         <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" name="first-name"/>
+                        <input type="text" id="first-name" name="first-name" required="required"/>
                     </div>
                     <div id="form-lastname" class="form-element">
                         <label for="last-name">Last Name:</label>
-                        <input type="text" id="last-name" name="last-name"/>
+                        <input type="text" id="last-name" name="last-name" required="required"/>
                     </div>
                     <div id="form-email" class="form-element">
                         <label for="email">E-mail:</label>
-                        <input type="text" id="email" class="email" />
+                        <input type="text" id="email" class="email" required="required"/>
                     </div>
                     <div id="form-message" class="form-element">
                         <label for="message">Message:</label>
-                        <textarea name="message" id="message" rows="4"></textarea>
+                        <textarea name="message" id="message" rows="4" required="required"></textarea>
                     </div>
                     <input type="submit" id="sub-btn" name="sub-btn" value="Send" />
                 </div>
@@ -213,11 +221,13 @@
         <div id="socials">
             <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
         <p>Copyright &#169; 2023 Miloš Milinković. All Rights Reserved.</p>
         <div id="sass">
             <a href="assets/css/style.scss" target="_blank"><i class="fa-brands fa-sass"></i></a>
             <a href="assets/css/responsive.scss" target="_blank"><i class="fa-brands fa-sass"></i></a>
+            <a href="assets/css/misc.scss" target="_blank"><i class="fa-brands fa-sass"></i></a>
         </div>
     </footer>
 </body>
