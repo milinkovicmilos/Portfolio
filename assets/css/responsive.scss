@@ -25,7 +25,7 @@
         }
         .tech ul li {
             width: 200px;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
     }
     #projects #project-container {
@@ -42,6 +42,7 @@
     }
     #contact #form-container {
         column-gap: 5vw;
+        width: 75%;
     }
     footer{
         i {
@@ -116,16 +117,24 @@
         font-size: 2.6rem;
     }
     #about p {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    #skills #skills-holder .tech {
+        h4 {
+            font-size: 1.4rem;
+        }
+        ul li {
+            font-size: 1.1rem;
+        }
     }
     #projects #project-container {
         grid-template-columns: 1fr;
         .project-holder {
             h4 {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
             p {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
         } 
     }

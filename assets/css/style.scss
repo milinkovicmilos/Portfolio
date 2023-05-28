@@ -78,10 +78,24 @@ main {
     padding-top: 200px;
     h2 {
         font-size: 1.8rem;
+        position: relative;
     }
     p {
         font-size: 3rem;
         margin-bottom: 20px;
+        position: relative;
+    }
+    h2::before, p::before {
+        @extend %showup-effect;
+    }
+    h2::before {
+        animation-delay: -0.5s;
+    }
+    @for $i from 1 to 4 {
+        #dot-#{$i} {
+            animation: blink 1s infinite;
+            animation-delay: #{($i - 1) * 0.25}s;
+        }
     }
 }
 #about {
@@ -202,6 +216,7 @@ main {
                 background-color: $main-color;
                 border: 0px;
                 border-bottom: 2px solid $details-color;
+                border-radius: 10px;
                 color: $second-color;
             }
             textarea {
@@ -224,6 +239,7 @@ main {
             font-size: 1.2rem;
             width: 100%;
             padding: 10px;
+            border-radius: 10px;
         }
         input[type="submit"]:focus {
             color: $second-color;

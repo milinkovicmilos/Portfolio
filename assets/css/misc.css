@@ -1,6 +1,6 @@
 @keyframes h-anim {
   0% {
-    transform: translate(-220px, 0px);
+    transform: translate(-200px, 0px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -12,5 +12,24 @@
   }
   100% {
     width: auto;
+  }
+}
+@keyframes showup {
+  0% {
+    width: 100%;
+  }
+  25% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes blink {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
   }
 }/*# sourceMappingURL=misc.css.map */

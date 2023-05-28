@@ -2,11 +2,11 @@ $main-color: #252525;
 $details-color: lighten($main-color, 20%);
 $second-color: #9cdcdd;
 $default-text-color: #fff;
-@mixin flex($jc, $w : nowrap) {
+@mixin flex($jc, $w : nowrap, $align : center) {
     display: flex;
-    align-items: center;
     justify-content: $jc;
     flex-wrap: $w;
+    align-items: $align;
 }
 @mixin grid($n-columns) {
     display: grid;
@@ -28,9 +28,20 @@ $default-text-color: #fff;
 %move-down {
     margin-top: 60px;
 }
+%showup-effect {
+    content: "";
+    display: block;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    background-color: $main-color;
+    z-index: 1;
+    animation: showup 2s ease-in;
+    right: 0px;
+}
 @keyframes h-anim {
     0% {
-        transform: translate(-220px, 0px);
+        transform: translate(-200px, 0px);
     }
     100% {
         transform: translate(0px, 0px);
@@ -42,5 +53,24 @@ $default-text-color: #fff;
     }
     100% { 
         width: auto;
+    }
+}
+@keyframes showup {
+    0% {
+        width: 100%;
+    }
+    25% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+@keyframes blink {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
     }
 }

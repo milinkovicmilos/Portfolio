@@ -2,9 +2,21 @@
   margin-top: 60px;
 }
 
+#cover h2::before, #cover p::before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  background-color: #252525;
+  z-index: 1;
+  animation: showup 2s ease-in;
+  right: 0px;
+}
+
 @keyframes h-anim {
   0% {
-    transform: translate(-220px, 0px);
+    transform: translate(-200px, 0px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -16,6 +28,25 @@
   }
   100% {
     width: auto;
+  }
+}
+@keyframes showup {
+  0% {
+    width: 100%;
+  }
+  25% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes blink {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
   }
 }
 * {
@@ -81,9 +112,9 @@ header {
   width: 80%;
   margin: 0px auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: center;
 }
 header nav {
   height: 100%;
@@ -93,9 +124,9 @@ header nav ul {
   height: 100%;
   list-style-type: none;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: center;
 }
 header nav a {
   text-decoration: none;
@@ -117,10 +148,27 @@ main {
 }
 #cover h2 {
   font-size: 1.8rem;
+  position: relative;
 }
 #cover p {
   font-size: 3rem;
   margin-bottom: 20px;
+  position: relative;
+}
+#cover h2::before {
+  animation-delay: -0.5s;
+}
+#cover #dot-1 {
+  animation: blink 1s infinite;
+  animation-delay: 0s;
+}
+#cover #dot-2 {
+  animation: blink 1s infinite;
+  animation-delay: 0.25s;
+}
+#cover #dot-3 {
+  animation: blink 1s infinite;
+  animation-delay: 0.5s;
 }
 
 #about {
@@ -141,9 +189,9 @@ main {
 }
 #skills #skills-holder {
   display: flex;
-  align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
 }
 #skills #skills-holder .tech {
   width: 50%;
@@ -161,9 +209,9 @@ main {
   margin-bottom: 20px;
   font-size: 1.8rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: center;
 }
 #skills #skills-holder .tech .img-holder {
   width: 40px;
@@ -215,9 +263,9 @@ main {
   width: 90%;
   margin: 0px auto;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
   flex-wrap: nowrap;
+  align-items: center;
   aspect-ratio: 2/1;
   margin-bottom: 20px;
   background-color: #2e2e2e;
@@ -247,9 +295,9 @@ main {
 }
 #contact #form-container .form-element {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: center;
   flex-direction: column;
 }
 #contact #form-container .form-element label {
@@ -266,6 +314,7 @@ main {
   background-color: #252525;
   border: 0px;
   border-bottom: 2px solid #585858;
+  border-radius: 10px;
   color: #9cdcdd;
 }
 #contact #form-container .form-element textarea {
@@ -287,6 +336,7 @@ main {
   font-size: 1.2rem;
   width: 100%;
   padding: 10px;
+  border-radius: 10px;
 }
 #contact #form-container input[type=submit]:focus {
   color: #9cdcdd;
@@ -299,9 +349,9 @@ footer {
   width: 90%;
   margin: 0px auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
   margin: 40px auto;
 }
 footer i {
@@ -311,7 +361,7 @@ footer i {
 footer #socials, footer #sass {
   width: 15%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
