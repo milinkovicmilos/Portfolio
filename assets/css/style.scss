@@ -317,6 +317,10 @@ footer {
         color: $default-text-color;
         font-size: 1.8rem;
     }
+    p {
+        width: 52%;;
+        text-align: center;
+    }
     #socials, #sass {
         width: 15%;
         @include flex(space-between);

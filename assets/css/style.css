@@ -422,6 +422,10 @@ footer i {
   color: #fff;
   font-size: 1.8rem;
 }
+footer p {
+  width: 52%;
+  text-align: center;
+}
 footer #socials, footer #sass {
   width: 15%;
   display: flex;

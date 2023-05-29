@@ -5,6 +5,9 @@
   #projects #project-container .project-holder p {
     font-size: 1rem;
   }
+  footer #socials, footer #sass {
+    width: 22%;
+  }
 }
 @media screen and (max-width: 1024px) {
   header nav {
@@ -47,11 +50,13 @@
   footer i {
     font-size: 1.5rem;
   }
-  footer #socials, footer #sass {
-    width: 15%;
-  }
   footer #to-top-btn i {
     font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  footer #to-top-btn {
+    bottom: 55px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -116,6 +121,14 @@
   #contact #form-container input, #contact #form-container textarea {
     font-size: 1.1rem;
   }
+  footer p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 488px) {
+  footer #to-top-btn {
+    bottom: 120px;
+  }
 }
 @media screen and (max-width: 480px) {
   header nav a {
@@ -159,7 +172,7 @@
     flex-direction: column;
   }
   footer #socials, footer #sass {
-    width: 50%;
+    width: 70%;
   }
   footer #to-top-btn {
     bottom: 182px;
