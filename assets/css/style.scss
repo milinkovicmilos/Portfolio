@@ -65,6 +65,19 @@ header {
         a {
             @include link-style(1.4rem);
         }
+        a::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            background-color: $default-text-color;
+            transition: transform 0.2s;
+        }
+        a:hover::after {
+            transform: scaleX(1);
+            background-color: $details-color;
+        }
     }
 }
 main {
@@ -73,7 +86,7 @@ main {
     padding-bottom: 40px;
 }
 #cover {
-    height: 500px;
+    height: 400px;
     @include center(90%);
     padding-top: 200px;
     h2 {
@@ -91,12 +104,6 @@ main {
     h2::before {
         animation-delay: -0.5s;
     }
-    @for $i from 1 to 4 {
-        #dot-#{$i} {
-            animation: blink 1s infinite;
-            animation-delay: #{($i - 1) * 0.25}s;
-        }
-    }
 }
 #about {
     @include center(90%);
@@ -106,6 +113,58 @@ main {
     }
     p {
         font-size: 1.4rem;
+    }
+    #dot-holder {
+        @include center(10%);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        @include flex(space-evenly, wrap, center);
+        flex-direction: column;
+        font-size: 2.5rem;
+        color: transparent;
+        @for $i from 1 to 4 {
+            #dot-#{$i} {
+                animation: blink 1s infinite;
+                animation-delay: #{($i - 1) * 0.25}s;
+            }
+        }
+    }
+    #about-card {
+        @include flex(space-between, wrap);
+        margin-top: 60px;
+        position: relative;
+        .img-holder {
+            width: 50%;
+            height: 400px;
+            img {
+                display: block;
+                height: 100%;
+                margin: 0px auto;
+                outline: 2px solid $details-color;
+            }
+        }
+        #text-holder {
+            width: 50%;
+            h4 {
+                font-size: 1.8rem;
+                text-decoration: none;
+                padding-bottom: 10px;
+            }
+            p {
+                font-size: 1.2rem;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+        #top-right-border {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 100px;
+            height: 100px;
+            border-top: 2px solid $details-color;
+            border-right: 2px solid $details-color;
+        }
     }
 }
 #skills {
@@ -253,6 +312,7 @@ footer {
     @include center(90%);
     @include flex(space-between, wrap);
     margin: 40px auto;
+    position: relative;
     i {
         color: $default-text-color;
         font-size: 1.8rem;
@@ -260,5 +320,19 @@ footer {
     #socials, #sass {
         width: 15%;
         @include flex(space-between);
+    }
+    #to-top-btn {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $main-color;
+        i {
+            font-size: 3rem;
+            color: $details-color;
+        }
+        i:hover {
+            color: $default-text-color;
+        }
     }
 }

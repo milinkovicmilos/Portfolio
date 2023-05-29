@@ -44,7 +44,7 @@ $default-text-color: #fff;
         transform: translate(-200px, 0px);
     }
     100% {
-        transform: translate(0px, 0px);
+        transform: translate(20px, 0px);
     }
 }
 @keyframes h-tag-reset {
@@ -67,10 +67,7 @@ $default-text-color: #fff;
     }
 }
 @keyframes blink {
-    0% {
-        visibility: visible;
-    }
     50% {
-        visibility: hidden;
+        color: $default-text-color;
     }
 }

@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Miloš Milinković - Full Stack Developer Portfolio" />
+    <meta name="keywords" content="developer, portfolio, projects, website" />
+    <meta name="author" content="Miloš Milinković" />
     <title>Miloš Milinković - Full Stack Dev</title>
     <!-- CSS StyleSheet -->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/responsive-min.css" type="text/css" />
     <!-- Inconsolata font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,13 +44,33 @@
         <section id="cover">
             <h2>Hello, I am</h2>
             <p>Miloš Milinković</p>
-            <p>Full Stack Developer <span id="dot-1">.</span><span id="dot-2">.</span><span id="dot-3">.</span></p>
+            <p>Full Stack Developer</p>
         </section>
         <section id="about">
             <h3>About Me</h3>
             <p>I'm Full Stack Developer based in Belgrade, Serbia.</p>
             <p>I love learning new technologies and mastering them to craft optimized web applications.</p>
             <p>Always looking forward to a challenge and seeking the most optimal solution for given task.</p>
+            <div id="dot-holder">
+                <div id="dot-1">.</div><div id="dot-2">.</div><div id="dot-3">.</div>
+            </div>
+            <div id="about-card">
+                <div class="img-holder">
+                    <img src="assets/img/photo.jpg" alt="author-photo" />
+                </div>
+                <div id="text-holder">
+                    <h4>Name</h4>
+                    <p>Miloš Milinković</p>
+                    <h4>Location</h4>
+                    <p>Belgrade, Serbia</p>
+                    <h4>Languages</h4>
+                    <p>Serbian (Native), English (B2)</p>
+                    <h4>Education</h4>
+                    <p>High School of Electrical Engineering "Rade Končar", Belgrade</p>
+                    <p>(Current) ICT College, Belgrade</p>
+                </div>
+                <div id="top-right-border"></div>
+            </div>
         </section>
         <section id="skills">
             <h3>My Skills</h3>
@@ -157,7 +180,7 @@
             <div id="project-container">
                 <div class="project-holder">
                     <h4>Coffee Corner</h4>
-                    <a href="#">
+                    <a href="https://www.github.com/milinkovicmilos/CoffeeCorner">
                         <div class="img-holder">
                             <img src="assets/img/project-images/coffee-corner-project.png" alt="coffee-corner-project-image" />
                         </div>
@@ -167,7 +190,7 @@
                 </div>
                 <div class="project-holder">
                     <h4>Portfolio</h4>
-                    <a href="#">
+                    <a href="https://www.github.com/milinkovicmilos/Portfolio">
                         <div class="img-holder">
                             <img src="assets/img/project-images/portfolio-project.png" alt="portfolio-project-image" />
                         </div>
@@ -177,7 +200,7 @@
                 </div>
                 <div class="project-holder">
                     <h4>Password generator</h4>
-                    <a href="#">
+                    <a href="https://www.github.com/milinkovicmilos/Password-Generator">
                         <div class="img-holder">
                             <img src="assets/img/project-images/pwgenerator-project.png" alt="password-generator-project-image" />
                         </div>
@@ -221,10 +244,13 @@
         </section>
     </main>
     <footer>
+        <div id="to-top-btn">
+            <a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        </div>
         <div id="socials">
             <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.github.com/milinkovicmilos" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
         <p>Copyright &#169; 2023 Miloš Milinković. All Rights Reserved.</p>
         <div id="sass">

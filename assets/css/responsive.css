@@ -17,6 +17,12 @@
     padding-top: 100px;
     height: 400px;
   }
+  #about #about-card #text-holder h4 {
+    font-size: 1.6rem;
+  }
+  #about #about-card #text-holder p {
+    font-size: 1rem;
+  }
   #skills #skills-holder h4 {
     font-size: 1.8rem;
   }
@@ -44,6 +50,9 @@
   footer #socials, footer #sass {
     width: 15%;
   }
+  footer #to-top-btn i {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
@@ -58,6 +67,15 @@
   }
   #about p {
     text-align: justify;
+  }
+  #about #about-card .img-holder, #about #about-card #text-holder {
+    width: 100%;
+  }
+  #about #about-card .img-holder {
+    padding-bottom: 20px;
+  }
+  #about #about-card #top-right-border {
+    display: none;
   }
   #skills #skills-holder .tech {
     width: 100%;
@@ -81,6 +99,9 @@
     margin-bottom: 40px;
     justify-content: space-evenly;
   }
+  footer #to-top-btn {
+    bottom: 102px;
+  }
 }
 @media screen and (max-width: 600px) {
   #projects #project-container .project-holder h4 {
@@ -88,6 +109,9 @@
   }
   #projects #project-container .project-holder p {
     font-size: 1rem;
+  }
+  #about #about-card .img-holder {
+    height: 300px;
   }
   #contact #form-container input, #contact #form-container textarea {
     font-size: 1.1rem;
@@ -108,6 +132,9 @@
   }
   #skills #skills-holder .tech ul li {
     font-size: 1.1rem;
+  }
+  #about #about-card #text-holder h4 {
+    font-size: 1.4rem;
   }
   #projects #project-container {
     grid-template-columns: 1fr;
@@ -133,5 +160,8 @@
   }
   footer #socials, footer #sass {
     width: 50%;
+  }
+  footer #to-top-btn {
+    bottom: 182px;
   }
 }/*# sourceMappingURL=responsive.css.map */

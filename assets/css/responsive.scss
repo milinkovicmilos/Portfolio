@@ -19,6 +19,14 @@
         padding-top: 100px;
         height: 400px;
     }
+    #about #about-card #text-holder {
+        h4 {
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
     #skills #skills-holder {
         h4 {
             font-size: 1.8rem;
@@ -51,6 +59,11 @@
         #socials, #sass {
             width: 15%;
         }
+        #to-top-btn {
+            i {
+                font-size: 2.5rem;
+            }
+        }
     }
 }
 @media screen and (max-width: 768px) {
@@ -64,9 +77,22 @@
             }
         }
     }
-    #about p {
-        text-align: justify;
-    }
+    #about {
+        p {
+            text-align: justify;
+        }
+        #about-card {
+            .img-holder, #text-holder {
+                width: 100%;
+            }
+            .img-holder { 
+                padding-bottom: 20px;
+            }
+            #top-right-border {
+                display: none;
+            }
+        }
+    } 
     #skills {
         #skills-holder .tech {
             width: 100%;
@@ -92,6 +118,9 @@
             margin-bottom: 40px;
             justify-content: space-evenly;
         }
+        #to-top-btn {
+            bottom: 102px;
+        }
     }
 }
 @media screen and (max-width: 600px) {
@@ -102,6 +131,9 @@
         p {
             font-size: 1rem;
         }
+    }
+    #about #about-card .img-holder {
+        height: 300px;
     }
     #contact #form-container {
         input, textarea {
@@ -125,6 +157,11 @@
         }
         ul li {
             font-size: 1.1rem;
+        }
+    }
+    #about #about-card #text-holder {
+        h4 {
+            font-size: 1.4rem;
         }
     }
     #projects #project-container {
@@ -152,6 +189,9 @@
         flex-direction: column;
         #socials, #sass {
             width: 50%;
+        }
+        #to-top-btn {
+            bottom: 182px;
         }
     }
 }
